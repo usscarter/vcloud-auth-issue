@@ -1,5 +1,7 @@
 # vcloud-auth-issue
 
+Reproducing vCloud authentication issue
+
 ## Steps
 
 Clone repository
@@ -16,9 +18,7 @@ Update app.config credentials
  <add key="vcloud.url" value="https://cloud.ussignalcom.net"/>
  ```
 
-Open solution using Visual Studio and execute the application
-
-Output error
+Open solution using Visual Studio and execute the application, see error below:
 
 ```output
 Error: The given key was not present in the dictionary.
