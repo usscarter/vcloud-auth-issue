@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\github\vcloud-auth-issue\Libraries\VcloudSDK_V5_5.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F63047C5-EBA9-444A-BA26-26AAE78B39FC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>VcloudSDK_V5_5</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>5.5.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>com.vmware.vcloud.sdk</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="VcloudRestSchema_V5_5" />
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="System\Resources\ResourceBundle.cs" />
+    <Compile Include="System\Resources\Locale.cs" />
+    <Compile Include="Catalog.cs" />
+    <Compile Include="CatalogItem.cs" />
+    <Compile Include="HardwareItem.cs" />
+    <Compile Include="Media.cs" />
+    <Compile Include="Organization.cs" />
+    <Compile Include="OrgNetwork.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="TaskList.cs" />
+    <Compile Include="AbstractVapp`1.cs" />
+    <Compile Include="Vapp.cs" />
+    <Compile Include="VappTemplate.cs" />
+    <Compile Include="LambdaComparer`1.cs" />
+    <Compile Include="vCloudClient.cs" />
+    <Compile Include="VcloudConstants.cs" />
+    <Compile Include="Vdc.cs" />
+    <Compile Include="VirtualCpu.cs" />
+    <Compile Include="VirtualDisk.cs" />
+    <Compile Include="VirtualMedia.cs" />
+    <Compile Include="VirtualMemory.cs" />
+    <Compile Include="VirtualNetworkCard.cs" />
+    <Compile Include="QueryService.cs" />
+    <Compile Include="ApiDefinition.cs" />
+    <Compile Include="AllocatedIpAddress.cs" />
+    <Compile Include="Disk.cs" />
+    <Compile Include="Metadata.cs" />
+    <Compile Include="OrgVdcNetwork.cs" />
+    <Compile Include="SerialPort.cs" />
+    <Compile Include="Service.cs" />
+    <Compile Include="VappNetwork.cs" />
+    <Compile Include="VdcStorageProfile.cs" />
+    <Compile Include="VM.cs" />
+    <Compile Include="exceptions\DuplicateNameException.cs" />
+    <Compile Include="exceptions\MissingPropertyException.cs" />
+    <Compile Include="exceptions\ResourceNotAddedException.cs" />
+    <Compile Include="maas\RelationType.cs" />
+    <Compile Include="maas\Notification.cs" />
+    <Compile Include="Resource\en_US\Resource.cs" />
+    <Compile Include="constants\NetworkAdapterType.cs" />
+    <Compile Include="constants\VappStatus.cs" />
+    <Compile Include="constants\VappTemplateStatus.cs" />
+    <Compile Include="constants\AccessLevelType.cs" />
+    <Compile Include="constants\AllocatedIpAddressAllocationType.cs" />
+    <Compile Include="constants\AllocationModelType.cs" />
+    <Compile Include="constants\BlockingTaskOperationType.cs" />
+    <Compile Include="constants\BlockingTaskTimeoutActionType.cs" />
+    <Compile Include="constants\BusSubType.cs" />
+    <Compile Include="constants\BusType.cs" />
+    <Compile Include="constants\EntityType.cs" />
+    <Compile Include="constants\EventType.cs" />
+    <Compile Include="constants\FenceModeValuesType.cs" />
+    <Compile Include="constants\FirewallDirectionType.cs" />
+    <Compile Include="constants\FirewallPolicyType.cs" />
+    <Compile Include="constants\GatewayBackingConfigValuesType.cs" />
+    <Compile Include="constants\GatewayEnums.cs" />
+    <Compile Include="constants\IdentityProviderSourceType.cs" />
+    <Compile Include="constants\ImageType.cs" />
+    <Compile Include="constants\IpAddressAllocationModeType.cs" />
+    <Compile Include="constants\IpsecVpnEncryptionProtocolType.cs" />
+    <Compile Include="constants\Layer4ProtocolType.cs" />
+    <Compile Include="constants\LdapAuthenticationMechanismType.cs" />
+    <Compile Include="constants\LdapConnectorType.cs" />
+    <Compile Include="constants\LdapModeType.cs" />
+    <Compile Include="constants\MetadataDomain.cs" />
+    <Compile Include="constants\MetadataDomainVisibility.cs" />
+    <Compile Include="constants\NatMappingModeType.cs" />
+    <Compile Include="constants\NatPolicyType.cs" />
+    <Compile Include="constants\NatTypeType.cs" />
+    <Compile Include="constants\TaskStatusType.cs" />
+    <Compile Include="constants\UndeployPowerActionType.cs" />
+    <Compile Include="constants\Version.cs" />
+    <Compile Include="constants\VimObjectTypeEnum.cs" />
+    <Compile Include="constants\VMStatus.cs" />
+    <Compile Include="constants\query\ExpressionType.cs" />
+    <Compile Include="constants\query\FilterType.cs" />
+    <Compile Include="constants\query\FormatType.cs" />
+    <Compile Include="constants\query\QueryField.cs" />
+    <Compile Include="constants\query\QueryAdminVAppField.cs" />
+    <Compile Include="constants\query\QueryAdminVdcField.cs" />
+    <Compile Include="constants\query\QueryCatalogField.cs" />
+    <Compile Include="constants\query\QueryCellField.cs" />
+    <Compile Include="constants\query\QueryDatastoreField.cs" />
+    <Compile Include="constants\query\QueryDvSwitchField.cs" />
+    <Compile Include="constants\query\QueryEventField.cs" />
+    <Compile Include="constants\query\QueryGroupField.cs" />
+    <Compile Include="constants\query\QueryHostField.cs" />
+    <Compile Include="constants\query\QueryMediaField.cs" />
+    <Compile Include="constants\query\QueryNetworkField.cs" />
+    <Compile Include="constants\query\QueryNetworkPoolField.cs" />
+    <Compile Include="constants\query\QueryOrgField.cs" />
+    <Compile Include="constants\query\QueryOrgNetworkField.cs" />
+    <Compile Include="constants\query\QueryOrgVdcField.cs" />
+    <Compile Include="constants\query\QueryPortgroupField.cs" />
+    <Compile Include="constants\query\QueryRecordType.cs" />
+    <Compile Include="constants\query\QueryReferenceField.cs" />
+    <Compile Include="constants\query\QueryReferenceType.cs" />
+    <Compile Include="constants\query\QueryResourcePoolField.cs" />
+    <Compile Include="constants\query\QueryRightField.cs" />
+    <Compile Include="constants\query\QueryRoleField.cs" />
+    <Compile Include="constants\query\QueryStrandedUserField.cs" />
+    <Compile Include="constants\query\QueryUserField.cs" />
+    <Compile Include="constants\query\QueryVAppField.cs" />
+    <Compile Include="constants\query\QueryVAppNetworkField.cs" />
+    <Compile Include="constants\query\QueryVAppTemplateField.cs" />
+    <Compile Include="constants\query\QueryVirtualCenterField.cs" />
+    <Compile Include="constants\query\QueryVMField.cs" />
+    <Compile Include="constants\query\QueryVMWProviderVdcField.cs" />
+    <Compile Include="constants\query\OperatingSystemFamilyType.cs" />
+    <Compile Include="constants\query\OperatingSystemType.cs" />
+    <Compile Include="constants\query\MetadataExpressionType.cs" />
+    <Compile Include="constants\query\QueryAclRuleField.cs" />
+    <Compile Include="constants\query\QueryAdminAllocatedExternalAddressField.cs" />
+    <Compile Include="constants\query\QueryAdminApiDefinitionField.cs" />
+    <Compile Include="constants\query\QueryAdminCatalogField.cs" />
+    <Compile Include="constants\query\QueryAdminCatalogItemField.cs" />
+    <Compile Include="constants\query\QueryAdminDiskField.cs" />
+    <Compile Include="constants\query\QueryAdminEventField.cs" />
+    <Compile Include="constants\query\QueryAdminFileDescriptorField.cs" />
+    <Compile Include="constants\query\QueryAdminGroupField.cs" />
+    <Compile Include="constants\query\QueryAdminMediaField.cs" />
+    <Compile Include="constants\query\QueryAdminOrgNetworkField.cs" />
+    <Compile Include="constants\query\QueryAdminOrgVdcStorageProfileField.cs" />
+    <Compile Include="constants\query\QueryAdminServiceField.cs" />
+    <Compile Include="constants\query\QueryAdminShadowVMField.cs" />
+    <Compile Include="constants\query\QueryAdminTaskField.cs" />
+    <Compile Include="constants\query\QueryAdminUserField.cs" />
+    <Compile Include="constants\query\QueryAdminVAppNetworkField.cs" />
+    <Compile Include="constants\query\QueryAdminVAppTemplateField.cs" />
+    <Compile Include="constants\query\QueryAdminVmDiskRelationField.cs" />
+    <Compile Include="constants\query\QueryAdminVmField.cs" />
+    <Compile Include="constants\query\QueryAllocatedExternalAddressField.cs" />
+    <Compile Include="constants\query\QueryApiDefinitionField.cs" />
+    <Compile Include="constants\query\QueryApiFilterField.cs" />
+    <Compile Include="constants\query\QueryBlockingTaskField.cs" />
+    <Compile Include="constants\query\QueryCatalogItemField.cs" />
+    <Compile Include="constants\query\QueryConditionField.cs" />
+    <Compile Include="constants\query\QueryDatastoreProviderVdcRelationField.cs" />
+    <Compile Include="constants\query\QueryDiskField.cs" />
+    <Compile Include="constants\query\QueryEdgeGatewayField.cs" />
+    <Compile Include="constants\query\QueryExternalLocalizationField.cs" />
+    <Compile Include="constants\query\QueryFileDescriptorField.cs" />
+    <Compile Include="constants\query\QueryOrgVdcGatewayField.cs" />
+    <Compile Include="constants\query\QueryOrgVdcNetworkField.cs" />
+    <Compile Include="constants\query\QueryOrgVdcResourcePoolRelationField.cs" />
+    <Compile Include="constants\query\QueryOrgVdcStorageProfileField.cs" />
+    <Compile Include="constants\query\QueryProviderVdcResourcePoolRelationField.cs" />
+    <Compile Include="constants\query\QueryProviderVdcStorageProfileField.cs" />
+    <Compile Include="constants\query\QueryResourceClassActionField.cs" />
+    <Compile Include="constants\query\QueryResourceClassField.cs" />
+    <Compile Include="constants\query\QueryResourcePoolVMField.cs" />
+    <Compile Include="constants\query\QueryServiceField.cs" />
+    <Compile Include="constants\query\QueryServiceLinkField.cs" />
+    <Compile Include="constants\query\QueryServiceResourceField.cs" />
+    <Compile Include="constants\query\QueryStrandedItemField.cs" />
+    <Compile Include="constants\query\QueryTaskField.cs" />
+    <Compile Include="constants\query\QueryVAppOrgNetworkRelationField.cs" />
+    <Compile Include="constants\query\QueryVAppOrgVdcNetworkRelationField.cs" />
+    <Compile Include="constants\query\QueryVmDiskRelationField.cs" />
+    <Compile Include="constants\query\SortType.cs" />
+    <Compile Include="admin\AdminCatalog.cs" />
+    <Compile Include="admin\AdminOrganization.cs" />
+    <Compile Include="admin\AdminOrgNetwork.cs" />
+    <Compile Include="admin\AdminsConstants.cs" />
+    <Compile Include="admin\AdminVdc.cs" />
+    <Compile Include="admin\ExternalNetwork.cs" />
+    <Compile Include="admin\Group.cs" />
+    <Compile Include="admin\ProviderVdc.cs" />
+    <Compile Include="admin\Right.cs" />
+    <Compile Include="admin\Role.cs" />
+    <Compile Include="admin\User.cs" />
+    <Compile Include="admin\VcloudAdmin.cs" />
+    <Compile Include="admin\AdminOrgVdcNetwork.cs" />
+    <Compile Include="admin\AdminQueryService.cs" />
+    <Compile Include="admin\AdminVdcStorageProfile.cs" />
+    <Compile Include="admin\EdgeGateway.cs" />
+    <Compile Include="admin\ProviderVdcStorageProfile.cs" />
+    <Compile Include="admin\extensions\AdminExtensionConstants.cs" />
+    <Compile Include="admin\extensions\LicenseReport.cs" />
+    <Compile Include="admin\extensions\VcloudAdminExtension.cs" />
+    <Compile Include="admin\extensions\VMWExternalNetwork.cs" />
+    <Compile Include="admin\extensions\VMWHost.cs" />
+    <Compile Include="admin\extensions\VMWNetworkPool.cs" />
+    <Compile Include="admin\extensions\VMWProviderVdc.cs" />
+    <Compile Include="admin\extensions\VMWVimServer.cs" />
+    <Compile Include="admin\extensions\VMWDatastore.cs" />
+    <Compile Include="admin\extensions\BlockingTask.cs" />
+    <Compile Include="admin\extensions\ExtensionQueryService.cs" />
+    <Compile Include="admin\extensions\StrandedItem.cs" />
+    <Compile Include="admin\extensions\VcloudAdminExtensionSettings.cs" />
+    <Compile Include="admin\extensions\VMWProviderVdcStorageProfile.cs" />
+    <Compile Include="admin\extensions\service\AdminAclRule.cs" />
+    <Compile Include="admin\extensions\service\AdminApiDefinition.cs" />
+    <Compile Include="admin\extensions\service\AdminApiFilter.cs" />
+    <Compile Include="admin\extensions\service\AdminFileDescriptor.cs" />
+    <Compile Include="admin\extensions\service\AdminResourceClass.cs" />
+    <Compile Include="admin\extensions\service\AdminResourceClassAction.cs" />
+    <Compile Include="admin\extensions\service\AdminService.cs" />
+    <Compile Include="admin\extensions\service\AdminServiceLink.cs" />
+    <Compile Include="admin\extensions\service\AdminServiceResource.cs" />
+    <Compile Include="admin\extensions\service\ExtensionServiceConstants.cs" />
+    <Compile Include="utility\VcloudResource`1.cs" />
+    <Compile Include="utility\VcloudEntity`1.cs" />
+    <Compile Include="utility\ClientAppTrace.cs" />
+    <Compile Include="utility\Logger.cs" />
+    <Compile Include="utility\TraceLevel.cs" />
+    <Compile Include="utility\Levels.cs" />
+    <Compile Include="utility\Response.cs" />
+    <Compile Include="utility\RestUtil.cs" />
+    <Compile Include="utility\SdkMessage.cs" />
+    <Compile Include="utility\SdkMessageConstants.cs" />
+    <Compile Include="utility\SdkUtil.cs" />
+    <Compile Include="utility\SerializationUtil.cs" />
+    <Compile Include="utility\VCloudException.cs" />
+    <Compile Include="utility\VCloudRuntimeException.cs" />
+    <Compile Include="utility\Expression.cs" />
+    <Compile Include="utility\Filter.cs" />
+    <Compile Include="utility\QueryParams`1.cs" />
+    <Compile Include="utility\Result`1.cs" />
+    <Compile Include="utility\RecordResult`1.cs" />
+    <Compile Include="utility\ReferenceResult.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\en_US\Resource.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
